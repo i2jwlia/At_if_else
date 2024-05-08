@@ -5,22 +5,26 @@
     <title>Verificador de Temperatura</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f4f4f4;
+            background-color:#78c9ff;
             color: #333;
         }
         .container {
-            background: white;
+            background: rgb(229, 247, 255);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            height: 190px;
+            margin-top: 18%;
         }
         input[type="number"], button {
             padding: 10px;
             margin-top: 10px;
             border-radius: 5px;
-            border: 1px solid #ddd;
+            border: 1px solid #78c9ff;
         }
         button {
             color: white;
@@ -30,16 +34,55 @@
         button:hover {
             background-color: #3a66c4;
         }
+
+.button-62 {
+  background: linear-gradient(to bottom right, #7de1ff, #7ee1ff);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(255, 249, 249, 0.5), -.125rem -.125rem 1rem rgba(248, 244, 244, 0.5), .125rem .125rem 1rem rgba(255, 250, 247, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(255, 255, 255, 0.5), -.125rem -.125rem 1rem rgba(156, 240, 255, 0.5), .125rem .125rem 1rem rgba(255, 255, 255, 0.5);
+}
+
+.n {
+    border-radius: 8px;
+    width: 200px;
+    height:20px ;
+}
     </style>
 </head>
 <body>
+    <center>
     <div class="container">
         <h2>Insira a temperatura em Celsius:</h2>
         <form action="form.php" method="POST">
-            <input type="number" name="temperatura" step="0.1" required="">
-            <input type="submit" value="Ver temperatura">
+            <input type="value" name="temperatura" step="0.1" required="" maxlength="3" class="n">
+            <br><br>
+            <input type="submit" value="Ver temperatura" class="button-62">
         </form>
        
     </div>
+</center>
 </body>
 </html>
