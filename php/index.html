@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Temperatura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="number"], button {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            color: white;
+            background-color: #5C85D6;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3a66c4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Insira a temperatura em Celsius:</h2>
+        <form action="form.php" method="POST">
+            <input type="number" name="temperatura" step="0.1" required="">
+            <input type="submit" value="Ver temperatura">
+        </form>
+       
+    </div>
+</body>
+</html>
